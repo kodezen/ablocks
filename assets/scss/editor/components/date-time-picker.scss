@@ -1,0 +1,60 @@
+
+.ablocks-control-date-time-picker{
+    margin-bottom: 16px;
+}
+
+.ablocks-date-time-picker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ablocks-date-time-picker .ablocks-component-control-label{
+    margin-bottom: 0;
+}
+
+.ablocks-date-time-picker .ablocks-date-time-picker__btn{
+    border: 1px solid #DDDDDF;
+    
+}
+
+.ablocks-date-time-picker .ablocks-date-time-picker__btn button{
+    width: 100%;
+    border: none;
+    outline: none;
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* date timer picker default style change */
+
+
+// .ablocks-control-date-time-picker
+ .components-datetime__time-wrapper {
+    display: flex;
+    align-items: normal;
+}
+// .ablocks-control-date-time-picker
+ .components-datetime__time .components-button {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0 0 1px #000000 inset;
+}
+
+// .ablocks-control-date-time-picker
+ .components-datetime__time .components-button.is-primary {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0 1px #000000 inset !important ;
+}
+
+// .ablocks-control-date-time-picker
+ .components-datetime__date   .components-button.is-tertiary {
+    color: black;
+}
+
+.components-datetime__date {
+    margin-left: -8px;
+}

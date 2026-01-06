@@ -1,0 +1,35 @@
+.ablocks-block--scroll-to-top,
+.ablocks-block--scroll-to-top .ablocks-block-container {
+    display: flex;
+}
+.ablocks-block--scroll-to-top .ablocks-scroll-to-top-button-text ,.ablocks-block--scroll-to-top .ablocks-icon-wrap{
+    cursor: pointer;
+}
+
+.ablocks-block--scroll-to-top .ablocks-scroll-progress-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ablocks-block--scroll-to-top .ablocks-scroll-progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ablocks-block--scroll-to-top .ablocks-scroll-progress-ring__circle {
+  transition: stroke-dashoffset 0.35s ease;
+}
+
+.ablocks-block--scroll-to-top .ablocks-scroll-progress-content {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  background: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

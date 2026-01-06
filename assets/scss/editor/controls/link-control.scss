@@ -1,0 +1,36 @@
+.ablocks-link-controls {
+	width: 100%;
+	margin-bottom: 20px;
+	.ablocks-link-options-button {
+		width: 100%;
+		padding: 9px 18px;
+		border-radius: 6px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		color: var(--Primary-700, #13191b);
+		text-align: center;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		border-radius: var(--MD, 6px);
+		background: var(--Primary-200, #ededee);
+		&:hover {
+			background-color: #F4F4F5 ;
+			color: #454D54;
+		}
+	}
+	.ablocks-link-options {
+		.ablocks-control--text {
+			.ablocks-component-control-label {
+				margin-bottom: 0;
+			}
+		}
+		.ablocks-filed-description {
+			font-size: 12px;
+			font-style: italic;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.ablocks-control {
+	margin-bottom: 16px;
+	&--inline {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		/* If the items can be anywhere in the container */
+		> div:nth-child(1) {
+			flex: 0 0 35%; /* This sets the first item to 30% width */
+		}
+
+		> div:nth-child(2) {
+			flex: 0 0 65%; /* This sets the second item to 70% width */
+		}
+	}
+	&__head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.components-base-control {
+		margin-bottom: 0 !important;
+		&__field {
+			margin-bottom: 0 !important;
+		}
+	}
+}

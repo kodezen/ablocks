@@ -1,0 +1,167 @@
+.block-editor-block-list__block.ablocks-block {
+	position: relative;
+	outline: none !important;
+
+	// Solve quick edit conflicts
+	& > .ablocks-block-container {
+		position: inherit;
+	}
+
+	&::after {
+		content: none !important;
+	}
+
+	&:hover,
+	&.is-selected {
+		& > .ablocks-editor-block-control-wrap {
+			display: block;
+
+			&::after {
+				outline-width: 1px;
+			}
+		}
+	}
+
+	.ablocks-editor-block-control-wrap {
+		&.ablocks-editor-block-control-wrap--hovered-buttons {
+			display: block;
+		}
+
+		&--container-block {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		display: none;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		right: -1px;
+		bottom: -1px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 1px;
+			bottom: 1px;
+			left: 1px;
+			right: 1px;
+			outline: 2px solid #13191b;
+			border-radius: 0;
+		}
+
+		&:hover {
+			box-sizing: border-box;
+		}
+
+		&__buttons {
+			cursor: pointer;
+			font-size: 16px;
+			position: absolute;
+			z-index: 9999;
+			width: 120px;
+
+			button {
+				background-color: #13191b;
+				color: white;
+				width: 30px;
+				height: 30px;
+				outline: none;
+				border: none;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #1b2427;
+				}
+
+				&.ablocks-editor-block-control-button--edit-two {
+					border-bottom-left-radius: 8px;
+				}
+			}
+		}
+
+		&:not(.ablocks-editor-block-control-wrap--overflow-not-visible)
+			.ablocks-editor-block-control-wrap__buttons
+			button {
+			&.ablocks-editor-block-control-button--add {
+				border-top-left-radius: 8px;
+			}
+
+			&.ablocks-editor-block-control-button--delete {
+				border-top-right-radius: 8px;
+			}
+		}
+
+		&.ablocks-editor-block-control-wrap--overflow-not-visible
+			.ablocks-editor-block-control-wrap__buttons
+			button {
+			&.ablocks-editor-block-control-button--add {
+				border-bottom-left-radius: 8px;
+			}
+
+			&.ablocks-editor-block-control-button--delete {
+				border-bottom-right-radius: 8px;
+			}
+		}
+
+		&:not(.ablocks-editor-block-control-wrap--root-block) {
+			&:not(.ablocks-editor-block-control-wrap--container-block) {
+				.ablocks-editor-block-control-wrap__buttons {
+					right: 0;
+					top: 0;
+				}
+			}
+
+			&.ablocks-editor-block-control-wrap--container-block {
+				&::after {
+					outline-style: dashed;
+				}
+
+				.ablocks-editor-block-control-wrap__buttons {
+					top: 0;
+					left: 0;
+
+					button {
+						border-radius: 0 0 8px 0;
+					}
+				}
+			}
+
+			&::after {
+				top: 1px;
+				bottom: 1px;
+				left: 1px;
+				right: 1px;
+			}
+
+			.ablocks-editor-block-control-wrap__buttons {
+				width: auto;
+
+				button:first-child,
+				button:last-child {
+					display: none;
+				}
+			}
+		}
+
+		&.ablocks-editor-block-control-wrap--root-block {
+			.ablocks-editor-block-control-wrap__buttons {
+				left: 0;
+				right: 0;
+				bottom: 100%;
+				margin: auto;
+				justify-content: center;
+				text-align: center;
+                height: 30px !important;
+			}
+
+			&.ablocks-editor-block-control-wrap--overflow-not-visible {
+				.ablocks-editor-block-control-wrap__buttons {
+					top: -1px;
+				}
+			}
+		}
+	}
+}

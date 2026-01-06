@@ -1,0 +1,123 @@
+.ablocks-form-builder {
+	&__email__notification {
+		border: 2px solid #dddddf;
+		border-radius: 20px;
+		padding: 20px 0px;
+	}
+	&__email__section-title {
+		margin: 0 0 20px 15px;
+		font-size: 22px;
+		font-weight: 600;
+		color: #222222;
+	}
+	&__email-notification__button {
+		background: #e5e5e6;
+		color: #13191b;
+		padding: 8px 16px;
+		border: 1px solid #e0e0e0;
+		border-radius: 8px;
+		cursor: pointer;
+		margin-left: 20px;
+	}
+
+	&__email-template-editor {
+		border: 1px solid #ddd;
+		padding: 20px;
+		margin-bottom: 20px;
+		background-color: #f9f9f9;
+
+		.ablocks-form-builder-form-group {
+			.ablocks-form-builder-editor-label {
+				margin-bottom: 12px;
+				justify-content: space-between;
+				display: flex;
+				.ablocks-form-builder-action-button {
+					.ablocks-form-builder-action-button-quill-trigger {
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+	 div {
+		.tem-delete-create-update-button {
+		background: #e5e5e6;
+		color: #13191b;
+		padding: 8px 16px;
+		border: 1px solid #e0e0e0;
+		border-radius: 8px;
+		cursor: pointer;
+
+		}
+	 }	
+	}
+
+	&__email-templates-list {
+		table {
+			width: 100%;
+			border-collapse: collapse;
+
+			th,
+			td {
+				padding: 8px;
+				text-align: center;
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(1) {
+					width: 20%;
+				}
+				&:nth-child(3) {
+					width: 40%;
+				}
+				&:nth-child(4) {
+					width: 30%;
+				}
+			}
+
+			th {
+				background-color: #dddddf;
+				border-top: 2px solid #dddddf;
+				border-bottom: 2px solid #dddddf;
+				font-size: 20px;
+			}
+			tbody tr {
+				border-bottom: 1px solid #dddddf;
+				.isEmail-template-empty {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 13px;
+					padding: 9px 0;
+					.isEmail-template-empty-icon {
+						font-size: 38px;
+						padding: 10px 0px;
+					}
+					strong {
+						font-size: 18px;
+					}
+				}
+				td{
+					.ablocks-toggle-control{
+						justify-content: center
+					}
+					.button.button-small {
+						border: 1px solid #DDDDDF;
+						padding: 4px 4px 0px 4px;
+						span {
+							
+							color: #454D54;
+						}
+					}
+						.button-small {
+						border: 1px solid #DDDDDF;
+						padding: 4px 4px 0px 4px;
+						span {
+							
+							color: #454D54;
+						}
+					}
+				}
+			}
+		}
+	}
+}

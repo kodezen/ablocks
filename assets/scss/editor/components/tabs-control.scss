@@ -1,0 +1,27 @@
+.ablocks-tabs-control {
+    .components-tab-panel__tabs {
+        background: #F4F4F5;
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        .ablocks-tabs-control__tabs-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+            width: 100%;
+            height: 32px !important;
+            border-radius: 6px;
+            font-family: var(--ablocks-primary-font);
+            font-size: 12px;
+            line-height: 19px;
+            color: #787C82;
+            box-shadow: 0px 1px 1px 0px transparent;
+            &--active {
+                background: white;
+                color: var(--ablocks-primary-color);
+                box-shadow: 0px 1px 1px 0px #1015171F;
+            }
+        }
+    }
+}

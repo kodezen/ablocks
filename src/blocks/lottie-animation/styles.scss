@@ -1,0 +1,187 @@
+.ablocks-image-upload {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin: 0 0 8px 0;
+    color: #1e1e1e;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-family: Roboto;
+    margin: 0 0 20px 0;
+    color: #595959;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 14px;
+    position: relative;
+  }
+  &__input-div{
+    position: absolute;
+    bottom: -40px;
+    right: -78px;
+    &__in-upload{
+      width: 250px;
+      height: 45px;
+    }
+    .ablocks-icon{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+  }
+  &__input{
+    padding: 4px 20px !important;
+    border-radius: 8px !important;
+  }
+
+  &__button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &--primary {
+      background-color: #1e1e1e;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+
+    &--secondary {
+      background-color: #fff;
+      color: #1e1e1e;
+      border: 1px solid #DDDDDF;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+
+    &--url {
+      background-color: #fff;
+      color: #1e1e1e;
+      border-bottom: 1px solid #1e1e1e;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      text-decoration: underline;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.ablocks-media-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__inner {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    // background: url('http://kodezen.local/wp-content/plugins/ablocks//assets/images/placeholder-image.svg') center center no-repeat;
+    background-size: cover;
+
+    &-upload {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      align-items: center;
+      width: fit-content;
+      text-align: center;
+      background-color: var(--ablocks-primary-color);
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px 15px;
+      border: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #2C3A3F;
+        color: #fff !important;
+      }
+    }
+
+    &-replace {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      align-items: center;
+      width: fit-content;
+      background-color: var(--ablocks-primary-color);
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px 15px;
+      border: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #2C3A3F;
+        color: #fff !important;
+      }
+    }
+
+    &-remove {
+      position: absolute;
+      z-index: 2;
+      font-size: 20px;
+      right: 10px;
+      top: 13px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #666 !important;
+  
+      &:hover {
+        color: #ff0000;
+      }
+    }
+  }
+
+  &__inner-file-wrapper {
+    width: 100%;
+  }
+
+  .components-text-control__input {
+    padding-right: 30px;
+    width: 100%;
+  }
+}
+
+.ablocks-reverse-msg p{
+  font-size: 12px;
+  font-style: italic;
+  color: #666;
+}
+
+  // 'http://kodezen.local/wp-content/plugins/ablocks//assets/images/placeholder-image.svg'
+  

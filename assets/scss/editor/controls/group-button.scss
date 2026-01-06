@@ -1,0 +1,49 @@
+.ablocks-control--groupbutton {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .ablocks-control__fields {
+    display: inline-flex;
+    border: 1px solid #DDDDDF;
+    border-radius: 8px; 
+    overflow: hidden;
+    padding: 0;
+
+    .ablocks-btn {
+      border: none;
+      background-color: #FFFFFF;
+      color: var(--ablocks-primary-color);
+      cursor: pointer;
+      font-size: 14px;
+      flex: 1;
+      height: 35px;
+      outline: none;
+      border-radius: 0;
+      &:first-child{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+      }
+      &:last-child{
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 0px;
+      }
+    }
+.ablocks-btn:hover{
+      background-color: #E5E5E6;
+
+}
+    .active {
+      background-color: var(--ablocks-primary-color);
+      color: #FFFFFF;
+    }
+    .active:hover {
+      background-color: #2C3A3F;
+    }
+  }
+
+}

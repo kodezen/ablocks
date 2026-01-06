@@ -1,0 +1,40 @@
+/* -------- */
+.ablocks-block--table  table th , .ablocks-block--table  table td {
+    padding: 8px;
+}
+.ablocks-block--table  table th p , .ablocks-block--table  table td p{
+    margin: 0;
+}
+
+.ablocks-block--table {
+    overflow-y: auto;  
+}
+.ablocks-block--table table {
+    width: 100%;
+    margin: 0;
+}
+.ablocks-block--table table,
+.ablocks-block--table-header .ablocks-block--table-cell,
+.ablocks-block--table .ablocks-block--table-cell {
+    border: 1px solid #242222;
+}
+
+.ablocks-block--table .ablocks-block--table-header .ablocks-block--table-cel,
+.ablocks-block--table .ablocks-block--table-cell {
+    padding: 8px;
+}
+.ablocks-block--table-row .ablocks-block--table-cell {
+    min-height: 40px;
+}
+.ablocks-block--table .ablocks-block--table-header{
+    background-color: #565c56;
+}
+.ablocks-block--table .ablocks-block--table-footer{
+    background-color: #565c56;
+}
+.ablocks-block--table.ablocks-block--table-row:hover {
+    background-color: #f1f1f1;
+}
+
+
+

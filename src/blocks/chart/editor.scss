@@ -1,0 +1,55 @@
+.ablocks-chart-block-values-title{
+    text-align: center;
+}
+.ablocks-chart-block-input-label{
+    display: flex;
+    gap: 5px;
+    .ablocks-control--text{
+        gap: 20px;
+    }
+    .ablocks-icon--delete{
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
+.ablocks-chart-block-add-button{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #13191B;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.ablocks-chart-block-values-actions{
+    display: flex;
+    justify-content: space-between;
+    .ablocks-chart-block-duplicate-button{
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: #13191B;
+        width: fit-content;
+        border-radius: 8px;
+        padding: 12px 20px 12px 20px;
+        border: 0;
+        margin-bottom: 20px;
+    }
+    .ablocks-chart-block-remove-button{
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: red;
+        width: fit-content;
+        border-radius: 8px;
+        padding: 12px 20px 12px 20px;
+        border: 0;
+        margin-bottom: 20px;
+    }
+}

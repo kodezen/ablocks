@@ -1,0 +1,19 @@
+.ablocks-block--text-path:not(.ablocks-block-container),
+.ablocks-block--text-path .ablocks-block-container {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.ablocks-path-text-path{
+    height: auto;
+    max-width: 100%;
+    overflow: visible;
+    width: var(--width);
+}
+
+.ablocks-text-path-text-parent {
+    fill: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}

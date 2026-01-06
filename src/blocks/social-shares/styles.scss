@@ -1,0 +1,178 @@
+@function str-replace($string, $search, $replace: "") {
+	@if type-of($string) != "string" {
+		@return $string;
+	}
+	$index: str-index($string, $search);
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-slice($string, $index + str-length($search));
+	}
+	@return $string;
+}
+
+.ablocks-block--social-shares {
+	.ablocks-block-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.ablocks-social-share {
+		height: 48px;
+		width: 48px;
+		border-radius: 100% !important;
+		color: white;
+		padding: 14px;
+		background-color: white;
+		border: 2px solid rgb(238, 238, 247);
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(243, 232, 232);
+			color: white;
+		}
+
+		>.ablocks-svg-icon {
+			width: 16px;
+			height: 16px;
+			fill: black !important;
+		}
+	}
+
+	.ablocks-social-share-item {
+		text-decoration: none !important;
+		color: white !important;
+
+		&:hover {
+			background: var(--background-hover) !important;
+		}
+	}
+
+	.ablocks-social-share-icon-size {
+		height: 20px;
+		width: 21px;
+	}
+}
+
+.ablocks-social-share-item {
+	display: inline-flex;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	width: fit-content;
+	cursor: pointer;
+	text-align: center;
+
+	&--icon {
+		height: 42px;
+		width: 43px;
+		border-radius: 4px;
+		padding: -10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s ease;
+
+		&:hover {
+			background: var(--hover-icon-bg-color) !important;
+		}
+	}
+
+	&--text {
+		padding: 0 8px;
+		font-size: 16px;
+		width: 80px;
+		height: 26px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s ease;
+		border-radius: 4px;
+
+		&:hover {
+			background: var(--hover-text-bg-color) !important;
+		}
+	}
+
+	&--rounded {
+		border-radius: 15px;
+	}
+
+	&--circle {
+		border-radius: 24px;
+	}
+
+	&--circle-full {
+		border-radius: 100% !important;
+	}
+
+	&-icon--icon-text-Square {
+		border-radius: 4px 0px 0px 4px !important;
+	}
+
+	&-text--icon-text-Square {
+		border-radius: 0px 4px 4px 0px !important;
+	}
+
+	// Social media color classes
+	@each $data in (
+		("facebook", #366CDD, #2a4eb5, #3b5998, #2d4373),
+		("twitter", #007ab8, #005b8f, #00a3e0, #007bb8),
+		("linkedin", #0077B5, #005f87, #4c8caf, #3a6f87),
+		("pinterest", #E60023, #b8001b, #df2d47, #bf2037),
+		("reddit", #FF4500, #cc3700, #c45b36, #a0492c),
+		("vk", #216bbe, #1a54a0, #4680C2, #3666a0),
+		("ok", #F57C00, #c46200, #b17941, #8f5e33),
+		("tumblr", #0a2d5c, #081c40, #35465C, #2a3647),
+		("digg", #185396, #143d73, #4C75A3, #395782),
+		("skype", #00AFF0, #0088cc, #3a96b8, #2e7590),
+		("stumbleupon", #e03a0c, #b72f0a, #EC572F, #d1421c),
+		("mix", #bb7504, #945c03, #F5A623, #d28d1f),
+		("telegram", #006699, #004d73, #007ab8, #005b8f),
+		("whatsapp", #05c94d, #039639, #25D366, #1ea952),
+		("email", #bd2112, #941a0e, #D44638, #b0352b),
+		("print", #AAAAAA, #888888, #9A9A9A, #7a7a7a),
+		("pocket", #cd3a4d, #CC0033, #E54254, #B83244),
+		("xlng", #0875a8, #065b82, #1878a5, #135f80),
+		("x", #000000, #1a1a1a, #272525, #1f1f1f),
+		("threads", #000000, #1a1a1a, #161616, #0f0f0f),
+		("gmail", #a5584e, #b23121, #d14836, #b23121),
+		("messenger", #0084ff, #006bd6, #00a6fb, #0084ff),
+		("flipboard", #e12828, #c41e1e, #f03030, #d42525),
+		("blogger", #ff5722, #e64a19, #ff6f47, #e64a19),
+		
+	) {
+		$network: nth($data, 1);
+		$icon-color: nth($data, 2);
+		$icon-hover: nth($data, 3);
+		$bg-color: nth($data, 4);
+		$bg-hover: nth($data, 5);
+
+		&--#{$network}-icon-bg {
+			background-color: $icon-color;
+
+			&:hover {
+				background-color: $icon-hover;
+			}
+		}
+
+		&--#{$network}-bg {
+			background-color: $bg-color;
+
+			&:hover {
+				background-color: $bg-hover;
+			}
+		}
+	}
+}
+
+// Special size overrides for icons
+.ablocks-social-share-item--facebook-icon-bg,
+.ablocks-social-share-item--telegram-bg {
+	.ablocks_icon_size > .ablocks-svg-icon {
+		height: 23px;
+		width: 1.5rem;
+	}
+}

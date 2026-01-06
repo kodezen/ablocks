@@ -1,0 +1,72 @@
+.ablocks-control--number {
+	position: relative;
+	& > div:nth-child(2) {
+		flex: 0;
+	}
+	.ablocks-component-control-label {
+		margin-bottom: 0;
+	}
+	.components-input-control__container {
+		border-radius: 8px;
+		border: 1px solid #dddddf;
+		width: 130px;
+		.components-input-control {
+			&__input {
+				width: 100%;
+				height: 32px;
+				padding: 4px 8px;
+				border-radius: 8px;
+				font-size: 12px;
+				color: #13191b;
+				background: #fff;
+
+				&:focus {
+					border-color: transparent;
+					box-shadow: none;
+					outline: none;
+				}
+			}
+			&__backdrop {
+				border-color: transparent !important;
+				box-shadow: none !important;
+			}
+		}
+	}
+	.components-base-control__field {
+		width: 130px;
+		.components-text-control__input[type="number"] {
+			width: 100%;
+			height: 32px;
+			padding: 8px 12px;
+			border-radius: 8px;
+			font-size: 12px;
+			color: #13191b;
+			border: 1px solid #dddddf;
+			background: #fff;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+	.ablocks-dynamic-content-trigger {
+        right: 0%;
+		padding: 0px 11px;
+		border-radius: 0px 8px 8px 0;
+		height: 30px;
+		&.ablocks-icon--close{
+			padding: 0;
+			border-radius: 0;
+			top: 22%;
+			height: 16px;
+			width: 16px;
+			border: none;
+			margin-right: 26px;
+
+		}
+    }
+}
+
+.ablocks-dynamic-content-enabled-field-wrapper{
+	.components-text-control__input[type="number"]{
+		padding: 8px 24px 8px 8px !important;
+	}
+}

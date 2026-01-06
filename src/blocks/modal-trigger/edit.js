@@ -1,0 +1,65 @@
+import React, { useMemo, useEffect } from 'react';
+import { useSelect } from '@wordpress/data';
+import Settings from './settings';
+import Render from './render';
+import CSSGenerator from '@Utils/css-generator';
+
+export default function Edit( props ) {
+	const { isSelected, attributes, clientId, setAttributes } = props;
+	const { block_id } = attributes;
+	useEffect( () => {
+		if ( ! block_id || block_id !== clientId ) {
+			setAttributes( {
+				block_id: clientId,
+			} );
+		}
+	}, [ block_id, clientId ] );
+
+	const { hideTrigger } = attributes;
+	const { noTrigger, autoTriggerTime } = useSelect(
+		( select ) => {
+			const { getBlockParentsByBlockName, getBlock } =
+				select( 'core/block-editor' );
+			const parentModalId = getBlockParentsByBlockName(
+				clientId,
+				'ablocks/modal'
+			)[ 0 ];
+
+			// eslint-disable-next-line no-shadow
+			const { noTrigger, autoTriggerTime } = parentModalId
+				? getBlock( parentModalId ).attributes
+				: {};
+			return {
+				noTrigger,
+				autoTriggerTime,
+			};
+		},
+		[ clientId ]
+	);
+
+	useEffect( () => {
+		if (
+			noTrigger !== undefined &&
+			noTrigger !== hideTrigger &&
+			autoTriggerTime
+		) {
+			setAttributes( {
+				hideTrigger: noTrigger,
+			} );
+		}
+	}, [ noTrigger, autoTriggerTime ] ); // eslint-disable-line react-hooks/exhaustive-deps
+
+	// Generate CSS
+	const generatedCSS = useMemo( () => {
+		const cssGenerator = new CSSGenerator( attributes, clientId );
+		return cssGenerator.generateCSS();
+	}, [ attributes ] ); // eslint-disable-line react-hooks/exhaustive-deps
+
+	return (
+		<>
+			<style>{ generatedCSS }</style>
+			{ isSelected && <Settings { ...props } /> }
+			<Render { ...props } />
+		</>
+	);
+}

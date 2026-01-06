@@ -1,0 +1,34 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./assets/scss/blocks-common.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+.ablocks-invisible {
+  visibility: hidden;
+}
+
+/* icon css */
+.ablocks-icon-wrap {
+  display: inline-block;
+  font-size: 50px;
+  line-height: 1;
+}
+.ablocks-icon-wrap svg.ablocks-svg-icon {
+  display: block;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+}
+.ablocks-icon-wrap img.ablocks-image-icon {
+  height: auto;
+}
+
+.ablocks-background-video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

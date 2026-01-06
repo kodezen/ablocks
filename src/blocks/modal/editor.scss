@@ -1,0 +1,45 @@
+body.ablocks-editor-modal-block-is-currently-selected.ablocks-editor-modal-block-is-open
+	.components-accessible-toolbar {
+	// display: none;
+	// 👆 this 'display:none' commented because it's causing the header button unavailable when editing the panel. which may not expected & bad UX. SO, commented it.
+}
+
+body.ablocks-editor-modal-block-is-open
+	.components-popover.block-editor-block-popover {
+	z-index: 999999999999;
+}
+.ablocks-block--modal.ablocks-block--modal_hide-trigger {
+	.ablocks-block--modal-trigger {
+		opacity: 0.3;
+	}
+}
+
+.ablocks-block--modal-trigger {
+	width: 100%;
+}
+
+.ablocks-block-modal-position--block
+	.block-editor-block-list__block.ablocks-block.ablocks-block--modal-panel {
+	position: static;
+}
+
+.ablocks-block--modal.ablocks-block-modal-position--top
+	.ablocks-block-modal---panel-wrap
+	.ablocks-modal-popup-content-wrap,
+.ablocks-block--modal.ablocks-block-modal-panel-visibility--open.ablocks-block-modal-position--right
+	.ablocks-block-modal---panel-wrap
+	.ablocks-modal-popup-content-wrap {
+	right: 280px;
+}
+
+.ablocks-block--modal.ablocks-block-modal-panel-visibility--open.ablocks-block-modal-position--top
+	.ablocks-block-modal---panel-wrap
+	.ablocks-modal-popup-content-wrap,
+.ablocks-block--modal.ablocks-block-modal-position--left
+	.ablocks-block-modal---panel-wrap
+	.ablocks-modal-popup-content-wrap,
+.ablocks-block--modal.ablocks-block-modal-position--right
+	.ablocks-block-modal---panel-wrap
+	.ablocks-modal-popup-content-wrap {
+	top: 60px;
+}

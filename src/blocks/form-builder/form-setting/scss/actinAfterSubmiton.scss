@@ -1,0 +1,27 @@
+.ablocks-form-builder-action-after-submition {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+  max-width: 697px;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  &__action-types-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .ablocks-form-builder-action-after-submition__action-types-label {
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+  }
+}

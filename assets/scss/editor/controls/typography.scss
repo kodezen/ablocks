@@ -1,0 +1,97 @@
+.ablocks-control {
+	&--typography {
+		display: flex;
+		justify-content: space-between;
+
+		.ablocks-control__label {
+			margin-top: 7px;
+		}
+
+		.ablocks-icon--globe {
+			font-size: 16px;
+			color: #DEDEDE;
+			border: 1px solid #DEDEDE;
+			border-radius: 8px;
+			padding: 4px;
+			margin-bottom: 7px;
+			margin-top: 1px;
+			margin-right: 3px;
+			cursor: pointer;
+
+			&.active {
+				background-color: #444;
+			}
+		}
+
+		.ablocks-component-control-label {
+			margin-bottom: 0;
+		}
+
+		.ablocks-typography {
+			&--btn-options {
+				width: auto;
+				display: flex;
+				flex-direction: row-reverse;
+				flex-wrap: nowrap;
+			}
+		}
+	}
+}
+
+.ablocks-popover__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px 0;
+
+	.ablocks-global-font-item {
+		padding: 2px 0;
+
+		.ablocks-global-font-button {
+			cursor: pointer;
+			padding: 5px 10px;
+			border-radius: 4px;
+			transition: all 0.2s ease;
+			display: flex;
+			width: 100%;
+
+			&.active {
+				background-color: #13191b;
+				color: white;
+				display: flex;
+				width: 100%;
+			}
+		}
+
+		.ablocks-global-font-button:hover {
+			background: #F4F4F5;
+			color: #000000;
+		}
+	}
+
+	.components-base-control {
+		.components-input-control__container {
+			border-radius: 8px;
+		}
+
+		&__input {
+			width: 100px;
+			height: 32px;
+			padding: 4px 8px;
+			font-size: 12px;
+			color: #13191b;
+			background: #fff;
+
+			&:focus {
+				border-color: transparent;
+				box-shadow: none;
+				outline: none;
+			}
+		}
+
+		&__backdrop {
+			border-color: transparent !important;
+			box-shadow: none !important;
+		}
+	}
+}

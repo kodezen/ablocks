@@ -1,0 +1,53 @@
+.ablocks-form-builder-form-group
+   {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    .ablocks-form-builder-row{
+      display: flex;
+      gap: 6px;
+      align-items: center;
+     .ablocks-form-builder-row__filed{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+     }
+    }
+     .ablocks-form-builder-form-label
+  {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+  .ablocks-form-builder-form-input,
+  .ablocks-form-builder-form-select,
+  .ablocks-form-builder-form-textarea
+  {
+    padding: 7px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    color: #111827;
+    transition: all 0.2s ease;
+    max-width: 100%;
+
+    &:focus {
+      border-color: #2563eb;
+      background-color: #fff;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+  .ablocks-form-builder-action-after-submission-notice {
+      margin: 0;
+      color: #6B7280;
+      font-size: 13px;
+    }
+  }

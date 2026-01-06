@@ -1,0 +1,106 @@
+.ablocks-block--form-builder form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.ablocks-form-builder-duplicatedname {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+
+.ablocks-block--form-multi-step-child .block-editor-button-block-appender {
+  height: 60px;
+  margin: 10px 0;
+}
+
+.ablocks-editor-select__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ablocks-editor-select {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* form secleted */
+.ablocks-block--form-builder .wp-block-ablocks-form-select {
+  width: 100%;
+}
+
+.ablocks-editor-select__content-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+.ablocs-block-error-wrap {
+  height: 16px;
+}
+
+.ablocks-editor-select__inner-content {
+  padding: 10px;
+
+}
+
+.ablocks-editor-select__new-option input {
+  border: 1px solid #1b1b1b;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ablocks-editor-select__new-option input:focus {
+  outline: none;
+  border: 1px solid #1b1b1b;
+  box-shadow: none;
+}
+
+.ablocks-editor-select__new-option button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #1b1b1b;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ablocks-block--form-builder .wp-block-ablocks-form-textarea {
+  width: 100%;
+}
+
+.ablocks-form-builder-modal {
+  width: 100%;
+  height: auto;
+  margin: 24px;
+  max-height: 95%;
+
+}
+.ablocks-form-builder-block-variation-picker {
+	.components-placeholder.block-editor-block-variation-picker.has-many-variations.is-large {
+		.components-placeholder__fieldset {
+			ul {
+				li {
+					button {
+						img {
+							height: unset;
+							width: unset;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,220 @@
+.ablocks-control--select {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.ablocks-control__fields {
+		.components-base-control {
+			width: 130px;
+			.components-select-control {
+				border-radius: 8px;
+				height: 34px;
+				&__input {
+					&:focus,
+					&:focus-visible {
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ablocks-control--custom__select {
+    margin-bottom: 12px;
+}
+
+.ablocks-custom-select {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.ablocks-custom-select--options {
+		display: none;
+	
+		&.ablocks-custom-select--options--toggle {
+			display: block;
+		}
+	}
+	.ablocks-component-control-label {
+		margin-bottom: 0;
+	}
+	&--container {
+		width: 130px;
+		min-height: 30px;
+		border: 1px solid var(--ablocks-primary-border-color);
+		border-radius: 6px;
+		padding-right: 8px;
+		position: relative;
+	}
+	&--inner-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: var(--ablocks-primary-color);
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+		border-radius: 8px;
+		cursor: pointer;
+		&.disabled {
+			color: #b5b5b5;
+			cursor: not-allowed;
+			pointer-events: none;
+		}
+	}
+	&--indicator {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&--single-value {
+		width: 100%;
+		padding: 6px 0 6px 8px;
+		overflow-wrap: break-word;
+	}
+	&--multi-value {
+		width: 100%;
+		padding: 6px 0 6px 8px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 3px;
+		.ablocks-multi-select {
+			&--option {
+				display: flex;
+				align-items: stretch;
+				justify-content: center;
+				gap: 2px;
+				border-radius: 3px;
+				background-color: rgb(230, 230, 230);
+				&span {
+					padding: 2px 4px;
+				}
+			}
+			&--option-close {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #000000;
+				&:hover {
+					color: #ffff;
+					background-color: rgba(255, 0, 0, 0.607);
+				}
+			}
+			&--option-label {
+				font-size: 12px;
+				line-height: 10px;
+				padding: 3px 0 4px 4px;
+			}
+		}
+		&-close-option {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #000000;
+			&:hover {
+				color: #ffff;
+				background-color: rgba(255, 0, 0, 0.607);
+			}
+		}
+		// &-option {
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	gap: 2px;
+		// 	border-radius: 3px;
+		// 	background-color: rgb(230, 230, 230);
+		// 	&span {
+		// 		padding: 2px 4px;
+		// 	}
+		// }
+	}
+	&--options {
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		padding: 2px 5px;
+		max-height: 0;
+		border-radius: 6px;
+		margin-top: 3px;
+		background-color: #fff;
+		box-shadow: 0px 8px 24px 0px rgba(19, 25, 27, 0.16);
+		// transition: max-height 0.3s linear;
+		opacity: 0;
+		z-index: 999;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none; /* for Chrome, Safari, and Opera */
+		}
+		&--toggle {
+			max-height: 240px;
+			opacity: 1;
+			// display: flex;
+			justify-content: center;
+			gap: 10px;
+			flex-direction: column;
+		}
+	}
+	&--option {
+		display: block;
+		font-size: 12px;
+		color: var(--ablocks-primary-color);
+		padding: 4px 8px;
+		font-weight: 400;
+		line-height: 18px;
+		border-radius: 6px;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+		overflow-wrap: break-word;
+		&:hover {
+			color: var(--ablocks-primary-color);
+			background: var(--ablocks-primary-hover-color);
+		}
+		&--active {
+			color: #fff;
+			background: var(--ablocks-primary-color);
+			cursor: default;
+			&:hover {
+				color: #fff;
+				background: var(--ablocks-primary-color);
+			}
+		}
+		&--disabled {
+			color: #b5b5b5; /* Lighter text color for disabled state */
+			background-color: #f0f0f0; /* Light gray background for disabled state */
+			cursor: not-allowed; /* Change cursor to indicate that the option is disabled */
+			pointer-events: none; /* Prevent clicking on disabled options */
+			&:hover {
+				background-color: #f0f0f0; /* Ensure disabled options don't change on hover */
+			}
+		}
+	}
+	&--box {
+		width: 100%;
+		min-height: 30px;
+		position: relative;
+	}
+	&--input-container {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&--search-option {
+		width: 100% !important;
+		height: 100% !important;
+		font-size: 13px !important;
+		outline: none !important;
+		border: none !important;
+		padding: 0 8px !important;
+		cursor: pointer !important;
+		background: transparent !important;
+		&:focus {
+			outline: none !important;
+			border: none !important;
+			box-shadow: none !important;
+		}
+	}
+}

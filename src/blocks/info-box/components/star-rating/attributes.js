@@ -1,0 +1,101 @@
+import { getAttribute as iconPickerAttributes } from '@Controls/icon-upload/helper';
+import { getAttribute as getRangeAttributes } from '@Controls/range/helper';
+import { getAttribute as typographyAttributes } from '@Controls/typography/helper';
+import { getAttribute as getDimensionsAttributes } from '@Controls/dimensions/helper';
+
+//star rating starts
+export const spacingAttribute = getRangeAttributes( {
+	attributeName: 'spacing',
+	attributeObjectKey: 'value',
+	isResponsive: true,
+	defaultValue: 0,
+	hasUnit: true,
+	unitDefaultValue: 'px',
+	copyStyle: true,
+} );
+
+export const ratingNumberGapAttribute = getRangeAttributes( {
+	attributeName: 'ratingNumberGap',
+	attributeObjectKey: 'value',
+	defaultValue: 0,
+	hasUnit: true,
+	unitDefaultValue: 'px',
+	isResponsive: true,
+	copyStyle: true,
+} );
+
+export const ratingAttribute = getRangeAttributes( {
+	attributeName: 'rating',
+	isResponsive: false,
+	defaultValue: 4,
+	copyStyle: true,
+} );
+
+const ratingAttributes = {
+	//star rating starts
+	ratingScale: {
+		type: 'number',
+		default: 5,
+	},
+	...ratingAttribute,
+	ratingColor: {
+		type: 'string',
+		default: '#e99516',
+		copyStyle: true,
+	},
+	ratingColorHover: {
+		type: 'string',
+		default: '',
+		copyStyle: true,
+	},
+	ratingUnmarkedColor: {
+		type: 'string',
+		default: '#696969',
+		copyStyle: true,
+	},
+	ratingUnmarkedColorHover: {
+		type: 'string',
+		default: '',
+		copyStyle: true,
+	},
+	ratingTransition: {
+		type: 'number',
+		default: '',
+		copyStyle: true,
+	},
+	ratingShowCount: {
+		type: 'bool',
+		default: true,
+	},
+	showRatingNumber: {
+		type: 'bool',
+		default: true,
+	},
+	showCount: {
+		type: 'bool',
+		default: true,
+	},
+	ratingNumberColor: {
+		type: 'string',
+		default: '#000000',
+		copyStyle: true,
+	},
+	ratingNumberPosition: {
+		type: 'string',
+		default: 'right',
+		copyStyle: true,
+	},
+	...ratingNumberGapAttribute,
+	...spacingAttribute,
+
+	//star rating starts
+	...iconPickerAttributes( 'starIcon', {
+		path: 'M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z',
+		viewBox: '0 0 576 512',
+		className: 'far fa-star',
+		hasNoSelectorOrSource: true,
+	} ),
+	...getDimensionsAttributes( 'ratingMargin', true ),
+	...typographyAttributes( 'ratingNumberTypography', true ),
+};
+export default ratingAttributes;

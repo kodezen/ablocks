@@ -1,0 +1,77 @@
+.ablocks-control--text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	& > span:not([class]) {
+		display: none;
+	   
+	}
+	.components-base-control{
+		.components-base-control__field{
+			padding: 0;
+			
+		}
+	}
+    .ablocks-dynamic-content-enabled-field-wrapper{
+		margin-right: 23px;
+		border-radius: 8px 0px 0px 8px;
+		.dashicons-trash{
+			height: 100% !important;
+		}
+	}
+	.ablocks-component-control-label {
+		margin-bottom: 0 ;
+	}
+
+	.components-base-control {
+		&__field {
+			width: 130px;
+
+			.components-text-control {
+				&__input {
+					width: 100%;
+					height: 28px;
+					padding: 12px;
+					border-radius: 8px;
+					font-size: 12px;
+					color: #13191b;
+					border: 1px solid #dddddf;
+					background: #fff;
+					box-shadow: none;
+					outline: none;
+
+					&:focus,
+					&:active {
+						border-color: #dddddf;
+						box-shadow: none;
+						outline: none;
+					}
+				}
+				&__backdrop {
+					border-color: transparent !important;
+					box-shadow: none !important;
+				}
+			}
+		}
+	}
+	.ablocks-dynamic-content-trigger {
+        right: 0%;
+		padding: 0px 11px;
+		border-radius: 0px 8px 8px 0;
+		height: 30px;
+		&.ablocks-icon--close{
+			padding: 0;
+			border-radius: 0;
+			top: 22%;
+			height: 16px;
+			width: 16px;
+			border: none;
+			margin-right: 26px;
+
+		}
+    }
+}
+.ablocks-control__text-field-disabled .components-text-control__input{
+    color: #a9a9a9 !important; // Choose your desired color for disabled state
+}

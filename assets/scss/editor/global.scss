@@ -1,0 +1,243 @@
+:root {
+	--ablocks-primary-font: "Roboto", sans-serif;
+	--ablocks-primary-color: #13191b;
+	--ablocks-primary-border-color: #dddddf;
+	--ablocks-primary-hover-color: #ededee;
+}
+
+html :where(.wp-block.ablocks-block) {
+	margin-top: unset;
+	margin-bottom: unset;
+}
+
+button[class*="editor-block-list-item-ablocks"] {
+	transition: all 0.1s ease;
+	color: #454d54;
+
+	.ablocks-icon {
+		font-size: 26px;
+
+		&::before {
+			color: #13191b;
+		}
+	}
+
+	&:before {
+		border-radius: 20px;
+		content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjUwNDIgMTUuNjUyNEg0LjQ5NjE2QzIuNTEyMTYgMTUuNjUyNCAwLjkwNTc2MiAxNC4wNDYgMC45MDU3NjIgMTIuMDYyVjUuMDU3MkMwLjkwNTc2MiAzLjA3MzIgMi41MTIxNiAxLjQ2NjggNC40OTYxNiAxLjQ2NjhIMTEuNTAxQzEzLjQ4NSAxLjQ2NjggMTUuMDkxNCAzLjA3MzIgMTUuMDkxNCA1LjA1NzJWMTIuMDYyQzE1LjA5MTQgMTQuMDQ2IDEzLjQ4NSAxNS42NTI0IDExLjUwNDIgMTUuNjUyNFoiIGZpbGw9IiMxRDFEMUYiLz4KPHBhdGggZD0iTTExLjU3MTMgOC41MTk5MkMxMS41NzEzIDkuMDYwNzIgMTEuMzUwNSA5LjU1MDMyIDEwLjk5ODUgOS45MDIzMkMxMC42NDMzIDEwLjI1NzUgMTAuMTUzNyAxMC40NzUxIDkuNjE2MSAxMC40NzUxSDkuMDYyNVY2LjU2MTUySDkuNjE2MUMxMC42OTQ1IDYuNTYxNTIgMTEuNTcxMyA3LjQzODMyIDExLjU3MTMgOC41MTk5MloiIGZpbGw9IiNFQUVBRUIiLz4KPHBhdGggZD0iTTExLjU3MTEgNC4wOTQyNFY4LjUxOTg0QzExLjU3MTEgNy40MzgyNCAxMC42OTQzIDYuNTYxNDQgOS42MTI3NCA2LjU2MTQ0SDguMTI0NzRDNy41ODM5NCA2LjU2MTQ0IDcuMDk0MzQgNi43ODIyNCA2Ljc0MjM0IDcuMTM0MjRDNi4zODcxNCA3LjQ4OTQ0IDYuMTY5NTQgNy45NzkwNCA2LjE2OTU0IDguNTE2NjRDNi4xNjk1NCA5LjU5ODI0IDcuMDQ2MzQgMTAuNDc1IDguMTI3OTQgMTAuNDc1SDkuMDY1NTRWMTMuMDI4Nkg4LjA4NjM0QzUuNjE5MTQgMTMuMDI4NiAzLjYxOTE0IDExLjAyODYgMy42MTkxNCA4LjU2MTQ0QzMuNjE5MTQgNy4zMjYyNCA0LjExODM0IDYuMjA5NDQgNC45Mjc5NCA1LjQwMzA0QzUuNzM3NTQgNC41OTY2NCA2Ljg1NDM0IDQuMDk0MjQgOC4wODYzNCA0LjA5NDI0SDEwLjcxOTlDMTEuMDExMSA0LjA5NDI0IDExLjI4OTUgNC4wOTQyNCAxMS41NzExIDQuMDk0MjRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
+		font-size: 9px;
+		height: 15px;
+		margin: 10px;
+		opacity: 0.4;
+		padding: 2px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 15px;
+	}
+
+	&:hover {
+		background: #f4f4f5;
+		color: #454d54;
+
+		&::before {
+			opacity: 1;
+		}
+
+		span.block-editor-block-types-list__item-title {
+			color: #454d54 !important;
+		}
+	}
+}
+
+.ablocks-icon--none {
+	&::before {
+		color: #74777c;
+	}
+}
+
+	.ablocks-editor-list__inner-content{
+		.ablocks-normal-hover-tabs .components-tab-panel__tabs {
+			margin-left: -10px !important;
+			margin-right: -12px !important;	
+		}
+	}
+.ablocks-dynamic-content--delete,
+.ablocks-dynamic-content-trigger {
+	position: absolute;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	font-size: 16px;
+	border: 1px solid #dddddf;
+}
+
+.ablocks-dynamic-content--delete {
+	height: 35px;
+	top: 30px;
+	width: 35px;
+}
+
+p.ablocks-dynamic-content-enabled-field-wrapper {
+	margin: 0;
+	padding: 4px 12px 0px 12px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	text-transform: capitalize;
+	padding-right: 24px;
+	font-size: 12px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 106px;
+	height: 28px;
+
+	.ablocks-dynamic-enabled-icon {
+		margin-right: 20px;
+		cursor: pointer;
+	}
+}
+
+.components-popover {
+	.ablocks-react-select-control-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.ablocks-react-select-control {
+			border: 1px;
+		}
+
+		.ablocks-dynamic-tags-react-select-wrapper {
+			display: flex;
+			justify-content: space-between;
+
+			.ablocks-react-select-menu {
+				width: 223px;
+				left: -99px
+			}
+
+		}
+
+		.dynamic-post-type-search {
+			.ablocks-react-content-label {
+				overflow: hidden;
+				color: #13191b;
+				text-overflow: ellipsis;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 18px;
+				align-items: center;
+				margin-top: 0;
+				width: 100%;
+				display: block;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			.ablocks-react-select-single-value {
+				height: 100%;
+				padding: 5px 0;
+
+				.ablocks-react-select-input {
+					height: 100%;
+				}
+
+				.ablocks-react-select-input {
+					height: 28px;
+				}
+			}
+
+			.ablocks-react-select-menu {
+				div {
+					background: none;
+					margin: 0;
+					padding: 0;
+
+
+				}
+
+				.ablocks-react-select-option,
+				.ablocks-react-select-option.focused {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					gap: 10px;
+					margin: 4px 0;
+					padding: 4px 0;
+
+				}
+
+				.ablocks-react-select-option.focused {
+					background-color: #e1e1e1 !important;
+					color: #555;
+					width: 100%;
+				}
+
+				.ablocks-react-content-label {
+					padding-left: 10px;
+					margin: 0;
+				}
+
+				span {
+					font-size: 10px;
+					font-weight: 500;
+					background: rgba(27, 153, 84, 0.1);
+					padding: 2px 8px;
+					border-radius: 15px;
+					text-transform: uppercase;
+					margin-right: 10px;
+					height: 23px;
+
+					&.badge-page {
+						color: #1b9954;
+						background: rgba(27, 153, 84, 0.1);
+					}
+
+					&.badge-post {
+						color: #9b8af7;
+						background: rgba(155, 138, 247, 0.1);
+					}
+				}
+			}
+
+			.ablocks-react-select-value-container {
+				margin-top: -13px !important;
+			}
+
+			.ablocks-react-select-control {
+				.ablocks-react-select-value-container {
+					margin-top: 0 !important;
+				}
+			}
+		}
+
+	}
+
+	.ablocks-react-select-option.focused,
+	.ablocks-react-select-option.selected {
+		background-color: #13191B !important;
+		color: white
+	}
+
+	&.ablocks-dynamic-content-input-fields-popover {
+		.components-popover__content {
+			overflow: visible !important;
+			width: 245px;
+			padding: 12px;
+		}
+
+		.ablocks-react-select-input input {
+			box-shadow: none;
+			margin-top: -5px !important;
+		}
+
+	}
+}
+.ablocks-block > .ablocks-block-container > .components-disabled > div > .ablocks-block:not(.ablocks-block--storeengine-products, .ablocks-block--storeengine-product-filter, .ablocks-block--storeengine-login-form, .ablocks-block--storeengine-coupon-form, .ablocks-block--storeengine-cart-list, .ablocks-block--storeengine-checkout-form, .ablocks-block--academy-course-media, .ablocks-block--frontend-dashboard) {
+	all: unset !important;
+}

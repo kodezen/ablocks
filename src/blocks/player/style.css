@@ -1,0 +1,82 @@
+.ablocks-video-player {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.ablocks-vimeo-video-player {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: none;
+	background-color: #000000;
+}
+
+.ablocks-control-field-description {
+	font-size: 11px;
+	font-style: italic;
+	line-height: 1.4;
+}
+.ablocks-prevent-select {
+	position: relative;
+}
+.ablocks-prevent-select::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000000;
+}
+
+.ablocks-video--times-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 8px 0;
+}
+
+.ablocks-video--times-wrapper > .ablocks-control {
+	margin-bottom: 0;
+}
+
+.ablocks-video--times-wrapper > .ablocks-control-field-description {
+	margin-bottom: 8px;
+	margin-top: 4px;
+}
+
+.ablocks-play-pause-button{
+	width: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  	background:rgba(0,0,0,.5);
+  	transition:opacity .25s ease;
+  	cursor:pointer;   
+}
+.ablocks-play-pause-button.is-hidden{
+  opacity:0;
+  background:transparent; 
+}
+.ablocks-block-container #audio{
+	width: 100%;
+}
+
+.plyr__video-wrapper{
+    iframe {
+        position: absolute;
+        top: -55px !important;
+        height: calc(100% + 100px) !important;
+    }
+}

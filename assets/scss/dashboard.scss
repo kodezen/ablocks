@@ -1,0 +1,29 @@
+@import './dashboard/_global';
+@import './dashboard/_reset';
+@import './dashboard/_listTable';
+@import './dashboard/_button';
+@import './dashboard/_notification';
+@import './editor/components/search.scss';
+
+.ablocks-page-content {
+    box-sizing: border-box;
+    margin: 0 auto 100px;
+    max-width: 1250px;
+    overflow-x: hidden;
+    padding: 0 15px;
+    width: 100%
+}
+
+@media all and (max-width: 1500px) {
+    .ablocks-page-content {
+        max-width:1170px;
+        padding: 0
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .ablocks-page-content {
+        max-width:1090px;
+        padding: 0 15px
+    }
+}

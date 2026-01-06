@@ -1,0 +1,100 @@
+.ablocks-update-pro {
+  background: linear-gradient(0deg, #FFEBEB 0%, #FFEBE0 100%);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 245px;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #222;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 11px;
+    color: #777;
+    margin: 4px 0 0;
+  }
+
+  &__discount {
+    background-color: #00b67a;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+    height: fit-content;
+    width: 83px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    display: block;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 11px;
+    cursor: pointer;
+    height: 28px;
+  }
+
+  &__button {
+    display: block;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    background-size: 200% 100%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 11px;
+    cursor: pointer;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-position 0.5s ease, color 0.3s ease;
+  }
+
+  &__button:hover {
+   background: linear-gradient(to left, #ff512f, #f09819);
+  }
+
+  &__note {
+    text-align: right;
+    font-size: 11px;
+    color: #666;
+
+    strong {
+      display: block;
+      font-weight: 600;
+      color: #222;
+    }
+
+    span {
+      font-style: italic;
+    }
+  }
+}

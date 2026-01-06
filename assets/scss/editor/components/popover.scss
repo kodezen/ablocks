@@ -1,0 +1,108 @@
+.ablocks-component-popover {
+	&__field {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.ablocks-icon {
+			font-size: 14px;
+			padding: 4px;
+			border: none;
+			cursor: pointer;
+			&:hover {
+				background: var(--ablocks-primary-border-color);
+				border: none;
+				border-radius: 4px;
+			}
+		}
+
+		&--active {
+			height: 22px;
+            padding: 0;
+			background: var(--ablocks-primary-border-color);
+			border: none;
+			border-radius: 4px;
+		}
+	}
+}
+
+.ablocks-component-popover__popover {
+	box-shadow: 0px 8px 48px 0px #13191b14;
+	border-radius: 8px;
+	.ablocks-component-popover__head {
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid var(--ablocks-primary-border-color);
+		top: -1px;
+		left: 0;
+		width: 100%;
+		padding: 12px;
+		overflow: hidden;
+		background: #fff;
+		z-index: 9;
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
+
+		&-title {
+			margin: 0;
+		}
+		&-control {
+			display: flex;
+			column-gap: 4px;
+
+			.ablocks-icon {
+				cursor: pointer;
+				&:before {
+					font-size: 18px;
+					color: var(--ablocks-primary-color);
+				}
+				&:hover {
+					background: var(--ablocks-primary-border-color);
+					border: none;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+	.components-popover__content {
+	position: relative;
+	width: 260px;
+	box-shadow: 0px 8px 48px 0px #13191b14;
+	padding: 50px 16px 14px;
+	border-radius: 8px;
+	max-height: 400px; 
+	overflow-y: auto; 
+	scrollbar-width: thin;
+	scrollbar-color: var(--ablocks-primary-border-color) transparent;
+	}
+
+// ADDED: Custom scrollbar styling for WebKit browsers
+	.components-popover__content::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.components-popover__content::-webkit-scrollbar-thumb {
+		background-color: var(--ablocks-primary-border-color);
+		border-radius: 4px;
+	}
+
+	.components-popover__content::-webkit-scrollbar-track {
+		background: transparent;
+	}	
+}
+
+.figma-paste-btn {
+	cursor: pointer;
+	font-size: 15px;
+	height: 21px;
+	width: 21px;
+	padding: 2px;
+	display: inline-flex;
+	color: #3f3b3b;
+	justify-content: center;
+	align-items: center;
+	background: #efeff0;
+	border-radius: 50%;
+}

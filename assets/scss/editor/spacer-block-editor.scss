@@ -1,0 +1,13 @@
+.ablocks-block--spacer {
+	&.is-selected {
+		.ablocks-spacer__box {
+			background-color: #c4c4c48a;
+		}
+	}
+
+	&:not(.is-selected) {
+		.components-resizable-box__handle:after {
+			content: none;
+		}
+	}
+}

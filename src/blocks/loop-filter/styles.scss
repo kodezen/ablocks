@@ -1,0 +1,56 @@
+.components-base-control {
+
+    .ablocks-taxonomy-select {
+
+        .css-b62m3t-container {
+            input[type=text]:focus {
+                box-shadow: none;
+            }
+        }
+
+        .select__control {
+            &--is-focused {
+                box-shadow: none;
+                border-color: #E5E6E7;
+
+                &--is-menu-oprn {
+                    box-shadow: none;
+                    border-color: #E5E6E7;
+                }
+            }
+
+            .select__input-container {
+                input[type=text]:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .ablocks-terms-select {
+
+        .css-b62m3t-container {
+            input[type=text]:focus {
+                box-shadow: none;
+            }
+        }
+
+        .select__control {
+            &--is-focused {
+                box-shadow: none;
+                border-color: #E5E6E7;
+
+                &--is-menu-oprn {
+                    box-shadow: none;
+                    border-color: #E5E6E7;
+                }
+            }
+
+            .select__input-container {
+                input[type=text]:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

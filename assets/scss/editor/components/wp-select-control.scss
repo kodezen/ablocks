@@ -1,0 +1,26 @@
+.ablocks-wp-select-control {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: auto;
+
+	// select css
+	.components-base-control {
+		width: 130px;
+		border-radius: 8px;
+
+		.components-select-control {
+			border-radius: 8px;
+			height: 30px;
+
+			&__input {
+
+				&:focus,
+				&:focus-visible {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}

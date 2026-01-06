@@ -1,0 +1,27 @@
+:root {
+    --ablocks-primary-font: "Roboto", sans-serif;
+    --ablocks-primary-color: #0F0E16;
+    --ablocks-secondary-color: #eae8fa;
+    --ablocks-text-color: #111;
+    --ablocks-border-color: #E5E4E6;
+    --ablocks-gray-color: #f6f7f9;
+}
+
+.ablocks-initial-preloader {
+    font-size: 30px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.ablocks-heading {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--ablocks-primary-font);
+    line-height: 36px;
+    margin: 0 0 24px 0;
+}

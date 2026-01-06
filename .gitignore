@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+vendor/
+.git
+.idea
+**/*.map
+prepros.config
+.vscode

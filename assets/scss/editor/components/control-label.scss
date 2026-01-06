@@ -1,0 +1,28 @@
+.ablocks-component-control-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 700;
+
+	.ablocks-component-control-label__label {
+		font-family: var(--ablocks-primary-font);
+		margin-bottom: 0;
+	}
+
+	&__label {
+		cursor: default;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+}
+
+.ablocks-component-control-header {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 500;
+}

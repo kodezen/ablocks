@@ -1,0 +1,5 @@
+.ablocks-block--qr-code:not(.ablocks-block-container),
+.ablocks-block--qr-code .ablocks-block-container {
+    width: 100%;
+    display: flex;
+}

@@ -1,0 +1,22 @@
+.components-panel__body  {
+        .ablocks-control {
+            & > span:not([class]) {
+                display: none;
+               
+            }
+    }
+    
+    .components-button.components-panel__body-toggle {
+        &:focus {
+            box-shadow: none !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.components-panel__body.is-opened {
+    padding: 16px 16px 0 16px;
+    .ablocks-dynamic-content-enabled-field-wrapper{
+        height: 30px;
+    }
+}

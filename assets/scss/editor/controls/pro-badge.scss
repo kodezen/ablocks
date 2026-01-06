@@ -1,0 +1,119 @@
+.ablocks-pro-toggle {
+  &__label-control {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__toggle-control {
+    .ablocks-toggle-control {
+      margin: 0;
+      .components-form-toggle{
+        input[type=checkbox]{
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .ablocks-component-control-label__label {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .ablocks-icon {
+      &--lock {
+        margin-right: 8px;
+        font-size: 16px;
+        color: #454D54;
+        cursor: alias;
+
+        &:hover {
+          color: var(--ablocks-secondary-color);
+        }
+      }
+
+    }
+  }
+}
+
+.ablocks-pro-toggle__popover.ablocks-component-popover__popover {
+  .components-popover__content {
+    padding: 20px;
+    .ablocks-component-popover__head {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      padding: 0;
+      align-items: center;
+      border-bottom: none;
+
+      .ablocks-component-popover__head-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        color: #454D54;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        gap: 8px;
+      }
+
+      .pro-bandage {
+        background: #FF783F;
+        padding: 1px 6px;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 4px;
+      }
+    }
+
+    .ablocks-component-popover__content {
+      .ablocks-pro-toggle__line {
+        margin-top: 16px;
+        color: #DDDDDF;
+      }
+
+      .ablocks-pro-toggle__description {
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #74777C;
+      }
+
+      .ablocks-pro-toggle__upgrade-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #13191B;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        box-shadow: 0px 1px 2px 0px rgba(19, 25, 27, 0.16);
+
+        &:hover {
+          background-color: rgb(97, 84, 84);
+        }
+      }
+    }
+
+  }
+}

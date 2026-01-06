@@ -1,0 +1,44 @@
+.ablocks-border-control {
+	position: relative;
+	&__reset {
+		border-right: 1px solid #989da2;
+	}
+	&__options {
+		margin-top: 20px;
+		color: #989da2;
+		.components-base-control {
+			&__field {
+				.components-input-control__container {
+					.components-select-control__input {
+						color: #989da2;
+					}
+				}
+			}
+		}
+	}
+	&__shadow {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 10px;
+		.ablocks-components-group-button {
+			border: 1px solid #989da2;
+			border-radius: 5px;
+		}
+	}
+	.dashicons {
+		color: #989da2;
+	}
+
+	.ablocks-figma-styles-paster-component-wrapper {
+		position: absolute;
+		z-index: 2222222;
+		top: -38px;
+		right: 0;
+		.figma-paste-btn {
+			padding: 3px;
+			height: 22px;
+			width: 22px;
+		}
+	}
+}

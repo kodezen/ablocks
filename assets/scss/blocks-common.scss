@@ -1,0 +1,30 @@
+.ablocks-invisible {
+	visibility: hidden;
+}
+/* icon css */
+.ablocks-icon-wrap {
+    display: inline-block;
+	font-size: 50px;
+	line-height: 1;
+	svg.ablocks-svg-icon {
+		display: block;
+		line-height: 1;
+		width: 1em;
+		height: 1em;
+	}
+	img.ablocks-image-icon {
+		height: auto;
+	}
+}
+
+// background video --> block-container 
+.ablocks-background-video{
+	position: absolute;
+  left: 0;
+  top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+	object-fit: cover;
+}

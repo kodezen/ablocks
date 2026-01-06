@@ -1,0 +1,55 @@
+.ablocks-control--alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ablocks-component-control-label {
+		margin-bottom: 0;
+	}
+    .ablocks-control__fields {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid #DDDDDF;
+        padding: 4px;
+        border-radius: 6px;
+        width: 130px;
+        height: 36px;
+
+        .ablocks-btn {
+            padding: 4px 8px;
+            min-width: 24px;
+            height: 28px;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: #EDEDEE;
+            }
+
+            .ablocks-icon {
+                color: var(--ablocks-primary-color);
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .ablocks-btn--active {
+            background: var(--ablocks-primary-color);
+            .ablocks-icon {
+                color: #FFFFFF;
+            }
+
+            &:before {
+                background-color: var(--ablocks-primary-color);
+                color: #FFFFFF;
+            }
+
+            &:hover {
+                background-color: #2C3A3F;
+                color: #ffff;
+            }
+        }
+    }
+}

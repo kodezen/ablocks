@@ -1,0 +1,20 @@
+.ablock-form-builder-actions-wrapper {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  max-width: 697px;
+  margin: 0 auto;
+
+  &:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  }
+
+}
+
+
+

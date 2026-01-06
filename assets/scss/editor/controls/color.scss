@@ -1,0 +1,336 @@
+.ablocks-control-color-gradient {
+	.ablocks-component-popover__input-wrapper {
+		display: flex;
+		align-items: center;
+		position: relative;
+		width: 100%;
+
+		input.ablocks-component-popover__input {
+			width: 100%;
+			padding: 0px 0px 0px 30px;
+			border: 1px solid var(--Primary-200, #EDEDEE);
+			color: #13191B;
+			border-radius: 6px;
+			font-size: 12px;
+			padding-right: 25px;
+			width: 130px;
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+
+		}
+
+		.ablocks-component-popover__clear-button {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			font-size: 16px;
+			color: var(--Primary-500, #74777C);
+			user-select: none;
+
+			&:hover {
+				color: #000;
+			}
+		}
+
+		.ablocks-component-popover__color-button {
+			position: absolute;
+			left: 6px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 20px;
+			height: 20px;
+			border: 0.5px solid var(--Primary-300, #DDDDDF);
+			border-radius: 4px;
+			background: #fff;
+
+			svg {
+				width: 100%;
+				height: 100%;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	&-root-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.ablocks-component-control-label {
+			margin-bottom: 0;
+		}
+
+		.ablocks-control-color-gradient {
+			width: auto;
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: nowrap;
+		}
+
+		.ablocks-icon--globe {
+			font-size: 16px;
+			color: #DEDEDE;
+			border: 1px solid #DEDEDE;
+			border-radius: 8px;
+			padding: 4px;
+			margin-bottom: 7px;
+			margin-top: 1px;
+			margin-right: 3px;
+			cursor: pointer;
+
+			&.active {
+				background-color: #444;
+			}
+		}
+
+		.input-wrapper {
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			.icon-wrapper {
+				position: absolute;
+				left: 8px;
+				cursor: pointer;
+			}
+
+			.color-input {
+				padding-left: 40px; // Make room for the icon
+				padding-right: 24px; // Make room for the reset button
+				width: 100%;
+			}
+
+			.reset-button {
+				position: absolute;
+				right: 8px;
+				cursor: pointer;
+			}
+		}
+
+		.gradient-icon,
+		.color-icon,
+		.default-icon {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&-popover {
+		.ablocks-control-color-gradient-tabpanel-tab-title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px;
+
+			&--solid {
+				.ablocks-tab-span-circle {
+					background: #444;
+				}
+			}
+
+			&--linear-gradient {
+				.ablocks-tab-span-circle {
+					background: linear-gradient(to bottom, #444, #eee);
+				}
+			}
+
+			&--radial-gradient {
+				.ablocks-tab-span-circle {
+					background: radial-gradient(circle at center,
+							#eee 0,
+							#444 100%);
+				}
+			}
+		}
+
+		.ablocks-tab-span-circle {
+			display: block;
+			margin: auto;
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+		}
+
+		.ablocks-gradient-stop-custom-input-wrapper .ablocks-gradient-reversed-range-control {
+			border: none;
+			padding: 0;
+		}
+
+		.ablocks-gradient-reversed-range-control {
+			margin: 15px 0;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e3e3e3;
+
+			.components-base-control__field {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin: 0 !important;
+
+				&>.components-base-control__label {
+					margin: 0;
+					padding: 0;
+					font-size: 12px;
+					font-weight: 400;
+					text-transform: capitalize;
+				}
+
+				&>.components-range-control__root {
+					flex-direction: row-reverse;
+					column-gap: 8px;
+					padding-right: 6px;
+
+					.components-base-control.components-input-control.components-number-control.components-range-control__number {
+						margin-left: 0 !important;
+					}
+
+					.components-range-control__track {
+						background-color: var(--ablocks-primary-color);
+					}
+
+					.components-range-control__wrapper {
+						.components-range-control__thumb-wrapper {
+							span {
+								width: 20px;
+								height: 20px;
+								background-color: var(--ablocks-primary-color);
+								border: 5px solid #fff;
+								box-shadow: 0px 8px 24px 0px rgba(19, 25, 27, 0.16);
+
+								&::before {
+									background: none;
+									box-shadow: none;
+								}
+							}
+						}
+					}
+
+					.components-base-control {
+						.components-base-control__field {
+							.components-input-control__backdrop {
+								box-shadow: none;
+								border: 1px solid var(--ablocks-primary-border-color);
+								border-radius: 8px !important;
+							}
+
+							.components-input-control__container {
+								width: 60px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.ablocks-global-color {
+	.ablocks-global-color-list {
+		display: flex;
+		gap: 10px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+	}
+
+	.ablocks-global-color-list li {
+		cursor: pointer;
+	}
+
+	.ablocks-global-color-link-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.ablocks-global-color-list span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border: 1px solid #dddddf;
+		border-radius: 100%;
+		transition: all 0.2s ease;
+		position: relative;
+	}
+
+	.ablocks-global-color-list span:hover {
+		transform: scale(1.125);
+	}
+
+	.ablocks-global-color-list li.ablocks-color-selected span {
+		border: 2px solid #444;
+	}
+
+	.ablocks-global-color-list li.ablocks-color-selected span::after {
+		content: "✔";
+		color: #eee;
+		font-size: 14px;
+		font-weight: bold;
+		position: absolute;
+	}
+
+	.ablocks-global-color-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.ablocks-global-color-switch {
+		position: relative;
+		display: inline-block;
+		width: 40px;
+		height: 20px;
+	}
+
+	.ablocks-global-color-switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.ablocks-global-color-slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		border-radius: 20px;
+		transition: 0.3s;
+	}
+
+	.ablocks-global-color-slider:before {
+		position: absolute;
+		content: "";
+		height: 16px;
+		width: 16px;
+		left: 2px;
+		bottom: 2px;
+		background-color: white;
+		border-radius: 50%;
+		transition: 0.3s;
+	}
+
+	.ablocks-global-color-switch input:checked+.ablocks-global-color-slider {
+		background-color: #0073e6;
+	}
+
+	.ablocks-global-color-switch input:checked+.ablocks-global-color-slider:before {
+		transform: translateX(20px);
+	}
+
+}

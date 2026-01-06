@@ -1,0 +1,58 @@
+.ablocks-block--flip-box {
+  perspective: 1000px;
+}
+
+.ablocks-block--flip-box-child {
+  width: 100%;
+}
+
+// front & back side container
+.ablocks-block--flip-box .ablocks-block-container > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: block;
+}
+
+// front and back side style
+.ablocks-block--flip-box-child--inactive {
+  display: none;
+}
+
+.ablocks-block--flip-box-child--active {
+  display: block;
+}
+
+.ablocks-flipbox__front > .ablocks-block-container,
+.ablocks-flipbox__back > .ablocks-block-container {
+  padding: 20px 0;
+}
+
+/* Transformation styles */
+.ablocks-flipbox--transform-top .ablocks-flipbox__back,
+.ablocks-flipbox--transform-bottom .ablocks-flipbox__back {
+  transform: rotateX(180deg);
+}
+
+.ablocks-flipbox--transform-right .ablocks-flipbox__back,
+.ablocks-flipbox--transform-left .ablocks-flipbox__back {
+  transform: rotateY(180deg);
+}
+
+
+
+// zoom in effect
+.ablocks-flipbox--effect-zoom-in .ablocks-flipbox__front {
+  transform: scale(1);
+}
+
+.ablocks-flipbox--effect-zoom-in .ablocks-flipbox__back {
+  transform: scale(0);
+}
+
+// zoom out effect
+
+.ablocks-flipbox--effect-zoom-out .ablocks-flipbox__front {
+  transform: scale(0);
+}
+
+.ablocks-flipbox--effect-zoom-out .ablocks-flipbox__back {
+  transform: scale(1);
+}

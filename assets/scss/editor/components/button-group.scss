@@ -1,0 +1,95 @@
+.ablocks-component--buttongroup {
+	margin: 10px 0;
+	.ablocks-component__buttons {
+		border: 1px solid #d5d5d5a6;
+		border-radius: 8px;
+		display: flex;
+		justify-content: space-between;
+		background-color: white;
+
+		.ablocks-component__button {
+			height: 35px;
+			text-align: center;
+			border: none ;
+			outline: none;
+			padding: 0 ;
+			background-color: transparent;
+			width: 100%;
+			cursor: pointer;
+			&:hover {
+				background-color: #E5E5E6;
+				color: #454D54;
+			}
+			&.ablocks-component__button--has-icon {
+				height: 24px;
+				margin: 4px 1px;
+				&:first-child {
+					margin-left: 4px;
+				}
+				&:last-child {
+					margin-right: 4px;
+				}
+				span.ablocks-icon {
+					transition: 0.5s;
+					// background-color: #fff;
+					color: #13191b;
+					font-size: 16px;
+					width: 24px;
+					align-self: center;
+					height: 24px;
+					border-radius: 4px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					&.ablocks-icon-rotate-180-deg {
+						transform: rotate(180deg);
+					}
+				}
+			}
+			&:not(.ablocks-component__button--has-icon) {
+				transition: 0.36s;
+				&.active {
+					background-color: rgb(19, 25, 27) ;
+					border-color: rgb(19, 25, 27) ;
+					box-shadow: inset 0 0 0 1px rgb(19, 25, 27) ;
+				}
+			}
+			&.active {
+				color: #fff;
+				&.ablocks-component__button--has-icon {
+					span.ablocks-icon {
+						background-color: #13191b;
+						color: #fff;
+					}
+				}
+				&:first-child {
+					border-radius: 8px 0 0 8px;
+				}
+				&:last-child {
+					border-radius: 0 8px 8px 0;
+				}
+				
+				
+			}
+			&.active:hover{
+				background-color: #2C3A3F ;
+				color: #fff;			}
+
+		}
+	}
+
+	&.ablocks-component--buttongroup-inline {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		& > .ablocks-component-control-label {
+			margin: 0;
+		}
+	}
+
+	&:not(.ablocks-component--buttongroup-inline) {
+		transition: 0.11s;
+	}
+}

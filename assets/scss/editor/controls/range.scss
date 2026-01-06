@@ -1,0 +1,39 @@
+.ablocks-control--range {
+	.components-range-control__root {
+		flex-direction: row-reverse;
+		column-gap: 16px;
+		.components-base-control.components-input-control.components-number-control.components-range-control__number {
+			margin-left: 0 !important;
+		}
+		.components-range-control__track {
+			background-color: var(--ablocks-primary-color);
+		}
+		.components-range-control__wrapper {
+			.components-range-control__thumb-wrapper {
+				span {
+					width: 20px;
+					height: 20px;
+					background-color: var(--ablocks-primary-color);
+					border: 5px solid #fff;
+					box-shadow: 0px 8px 24px 0px rgba(19, 25, 27, 0.16);
+					&::before {
+						background: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+		.components-base-control {
+			.components-base-control__field {
+				.components-input-control__backdrop {
+					box-shadow: none;
+					border: 1px solid var(--ablocks-primary-border-color);
+					border-radius: 8px !important;
+				}
+				.components-input-control__container {
+					width: 60px;
+				}
+			}
+		}
+	}
+}

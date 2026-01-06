@@ -1,0 +1,63 @@
+.ablocks-react-select-control-wrapper {
+	.ablocks-dynamic-tags-react-select-wrapper{
+		.css-b62m3t-container{
+			min-width: 130px;
+			max-width:130px;
+			.ablocks-react-select-menu{
+				width:223px ;
+				left:-91px;
+			}
+		}
+	}
+
+	.components-panel__body{
+		border: none;
+		.components-panel__body-title{
+			.components-panel__body-toggle{
+				padding: 0 ;
+				svg{
+					right: 0;
+				}
+			}
+			&:hover{
+				background: none;
+			}
+		}
+		.ablocks-control {
+			margin-bottom: 12px;
+			justify-content: space-between;
+			align-items: center;
+			.ablocks-component-control-label{
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%;
+				
+			}
+			.components-base-control.ablocks-control__text-field{
+				width: 120px;
+				}
+		}
+		.ablocks-control--text{
+			flex-direction: row;
+			.components-base-control__field{
+				width: 100%;
+			}
+		}
+	&.is-opened{
+		padding: 12px 0;
+		.components-panel__body-toggle{
+			padding: 4px 16px ;
+			svg{
+				right: 16px;
+			}
+		}
+	}
+	 }
+     
+	
+}
+.image-source-options-select,
+.link-source-options-select {
+	min-width: 200px;
+}

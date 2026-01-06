@@ -1,0 +1,51 @@
+.components-panel__body {
+    .ablocks-modal-triger {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 16px 16px 16px;
+
+        .ablocks-modal-triger-area {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 16px;
+
+            &__title {
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                color: #13191B;
+
+                &--des {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #74777C;
+                }
+            }
+
+        }
+
+        .components-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #13191B;
+            border-radius: 8px;
+            padding: 8px 20px;
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            width: 100%;
+
+            &:hover {
+                background-color: #74777C;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

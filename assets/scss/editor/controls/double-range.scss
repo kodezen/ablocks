@@ -1,0 +1,68 @@
+.ablocks-double-range {
+  position: relative;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.ablocks-double-range__track {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ablocks-double-range__highlight {
+  position: absolute;
+  height: 100%;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+}
+
+.ablocks-double-range__left,
+.ablocks-double-range__right {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  cursor: pointer;
+  box-sizing: initial;
+  border: 2px solid white;
+}
+.ablocks-double-range__left{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ablocks-double-range__right{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+.ablocks-double-range__value {
+  position: absolute;
+  top: 12px;
+  color: black;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.ablocks-double-range__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Add spacing between labels and track */
+}
+
+.ablocks-double-range__from,
+.ablocks-double-range__to {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: medium;
+  text-align: center;
+}

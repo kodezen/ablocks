@@ -1,0 +1,74 @@
+.wp-block-ablocks-academy-certificate{
+    max-width: 1123px !important;
+}
+
+.ablocks-block--certificate__image-radio-control{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    &__image-option{
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 5px;
+        transition: border-color 0.3s;
+        &:last-child {
+            position: relative;
+            &::after {
+                content: "Custom Image";
+                position: absolute;
+                font-size: 12px;
+                font-weight: 600;
+                top: 30%;
+                left: 24%;
+                text-align: center;
+                width: 60px;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        &.selected {
+            border-color: #007cba;
+        }
+
+        
+    }
+   
+}
+.ablocks-block--certificate__background-image{
+        position: relative;
+        width: 1123px;
+        height: 794px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    &-inner-block{
+        width: 80%;
+        height: 100%;
+        padding:100px; 
+        box-sizing: border-box;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+
+.wp-block-image.aligncenter{
+    display: flex;
+    justify-content: center;
+}
+.wp-block-image.alignleft {
+    display: flex;
+    justify-content: left;
+    float: none;
+}
+.wp-block-image.alignright{
+    display: flex;
+    justify-content: right;
+    float: none;
+}
