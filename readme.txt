@@ -246,6 +246,10 @@ If you like aBlocks, then consider checking out our other WordPress Plugins for 
 👉 [Connect in our Linkedin](https://www.linkedin.com/showcase/ablocksteam/)
 👉 [Our Official Support](https://kodezen.com/support/)
 
+<strong>WANT TO CONTRIBUTE TO THE PLUGIN? 🙋</strong>
+
+You may now contribute to the plugin on Github: <a href="https://github.com/kodezen/ablocks" target="_blank" rel="">aBlocks on Github</a>
+
 == Frequently Asked Questions ==
 
 = Can I Use aBlocks with any WordPress Themes? = 
@@ -299,6 +303,9 @@ When maps are loaded, the user’s IP address and browser data may be sent to Go
 Terms: https://maps.google.com/help/terms_maps/  
 Privacy: https://policies.google.com/privacy
 
+== Credits ==
+
+Our external packages use [Lottie](https://github.com/chenqingspring/react-lottie) and [Striptags](https://github.com/ericnorris/striptags) is distributed under the terms of the MIT. Additionally, we incorporate [FontAwesome v6](https://fontawesome.com/license/free) under the CC BY 4.0 License, and [dnd kit](https://github.com/clauderic/dnd-kit) licensed under the MIT License.
 
 == Changelog ==
 
