@@ -61,17 +61,34 @@ class Addons {
 		}
 
 		if ( $status ) {
-			// phpcs:ignore  WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized 
-			$required_plugin = ( isset( $_POST['required_plugin'] ) ? json_decode( stripslashes( $_POST['required_plugin'] ), true ) : '' );
+
+			$required_plugin = array();
+
+			if ( isset( $_POST['required_plugin'] ) ) {
+				$raw_json = wp_unslash( $_POST['required_plugin'] );
+				$decoded  = json_decode( $raw_json, true );
+
+				if ( is_array( $decoded ) ) {
+					$required_plugin = map_deep( $decoded, 'sanitize_text_field' );
+				}
+			}
+
 			do_action( 'ablocks/before_active_addon', $addon_slug, $required_plugin );
-			if ( $required_plugin && is_array( $required_plugin ) ) {
+
+			if ( ! empty( $required_plugin ) ) {
 				foreach ( $required_plugin as $plugin ) {
-					if ( 'Wishlist Member' === $plugin['plugin_name'] ) {
-						$active_plugins = get_option( 'active_plugins', array() );
-						$plugin['plugin_dir_path'] = in_array( $plugin['plugin_dir_path'], $active_plugins, true ) ? $plugin['plugin_dir_path'] : ( in_array( 'wishlist-member-x/wpm.php', $active_plugins, true ) ? 'wishlist-member-x/wpm.php' : '' );
+
+					if ( empty( $plugin['plugin_dir_path'] ) || empty( $plugin['plugin_name'] ) ) {
+						continue;
 					}
-					if ( ! Helper::is_plugin_active( sanitize_text_field( $plugin['plugin_dir_path'] ) ) ) {
-						$error_message = sprintf( '%s Plugin is required to activate %s addon.', sanitize_text_field( $plugin['plugin_name'] ), $addon_name );
+
+					if ( ! Helper::is_plugin_active( $plugin['plugin_dir_path'] ) ) {
+						$error_message = sprintf(
+							'%s Plugin is required to activate %s addon.',
+							esc_html( $plugin['plugin_name'] ),
+							esc_html( $addon_name )
+						);
+
 						wp_send_json_error( $error_message );
 					}
 				}

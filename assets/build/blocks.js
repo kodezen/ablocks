@@ -165093,7 +165093,7 @@ function Edit(props) {
       return false;
     }
     jQuery.post(window.ajaxurl, {
-      action: 'get_academy_terms',
+      action: 'ablocks/get_academy_terms',
       security: window.ABlocksGlobal.nonce
     }, (data, status) => {
       if ('success' === status) {
@@ -274491,7 +274491,7 @@ function Edit(props) {
       return false;
     }
     jQuery.post(window.ajaxurl, {
-      action: 'get_storeengine_terms',
+      action: 'ablocks/get_storeengine_terms',
       security: window.ABlocksGlobal.ablocks_nonce
     }, (data, status) => {
       if ('success' === status) {

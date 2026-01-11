@@ -23,8 +23,7 @@ class Notice {
 		// Build dismissal URL (adds parameter to current page)
 		$dismiss_url = add_query_arg(
 			array( 'ablocks_dismiss_offer_notice' => '1' ),
-			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated, WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized 
-			$_SERVER['REQUEST_URI']
+			esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) )
 		);
 
 		?>

@@ -177,7 +177,7 @@ class Settings extends AbstractAjaxHandler {
 
 		$json_payload = Sanitizer::sanitize_payload([
 			'required_plugin' => 'json',
-		], $_POST); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		], $payload); 
 
 		$required_plugin = $json_payload['required_plugin'];
 
@@ -230,7 +230,7 @@ class Settings extends AbstractAjaxHandler {
 			'global_h4_typography' => 'json',
 			'global_h5_typography' => 'json',
 			'global_h6_typography' => 'json',
-		], $_POST); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		], $_POST ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 
 		$default = BaseSettings::get_default_data();
 		$is_update = BaseSettings::save_settings( [

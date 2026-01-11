@@ -34,7 +34,7 @@ export default function Edit( props ) {
 		jQuery.post(
 			window.ajaxurl,
 			{
-				action: 'get_storeengine_terms',
+				action: 'ablocks/get_storeengine_terms',
 				security: window.ABlocksGlobal.ablocks_nonce,
 			},
 			( data, status ) => {

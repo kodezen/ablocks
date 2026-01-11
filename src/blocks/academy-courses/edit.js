@@ -58,7 +58,7 @@ export default function Edit( props ) {
 		jQuery.post(
 			window.ajaxurl,
 			{
-				action: 'get_academy_terms',
+				action: 'ablocks/get_academy_terms',
 				security: window.ABlocksGlobal.nonce,
 			},
 			( data, status ) => {

@@ -1,4 +1,4 @@
-# Copyright (C) 2025 Kodezen LLC
+# Copyright (C) 2026 Kodezen LLC
 # This file is distributed under the GPL-3.0+.
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-12-28T14:11:49+00:00\n"
+"POT-Creation-Date: 2026-01-11T10:52:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: ablocks\n"
@@ -207,7 +207,7 @@ msgstr ""
 msgid "Patterns"
 msgstr ""
 
-#: includes/admin/notice.php:42
+#: includes/admin/notice.php:41
 msgid "Dismiss"
 msgstr ""
 
@@ -880,27 +880,27 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: templates/email/email-verify.php:11
+#: templates/email/email-verify.php:13
 msgid "Email verification"
 msgstr ""
 
-#: templates/email/email-verify.php:13
+#: templates/email/email-verify.php:18
 msgid "Hello"
 msgstr ""
 
-#: templates/email/email-verify.php:14
+#: templates/email/email-verify.php:23
 msgid "Thank you for registering with us. Please click the link below to verify your email address:"
 msgstr ""
 
-#: templates/email/email-verify.php:15
+#: templates/email/email-verify.php:28
 msgid "Verify Your Email"
 msgstr ""
 
-#: templates/email/email-verify.php:16
+#: templates/email/email-verify.php:32
 msgid "If you did not register, please ignore this email."
 msgstr ""
 
-#: templates/email/email-verify.php:17
+#: templates/email/email-verify.php:35
 msgid "Best regards"
 msgstr ""
 
